@@ -17,7 +17,7 @@ credential = DefaultAzureCredential()
 client = SecretClient(vault_url=vault_url, credential=credential)
 
 #openai_api_key = client.get_secret("OPENAI-API-KEY").value
-### End keyvault
+#### End keyvault
 
 def get_openai_response(request):
     user_input = request.GET.get('prompt', '')
